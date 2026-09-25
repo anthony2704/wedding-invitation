@@ -3,17 +3,18 @@ export type EventDetails = { label: string; time: string; venue: string; address
 export type GalleryItem = { src: string; alt: string; caption: string };
 
 export type WeddingData = {
-  groomName: string; brideName: string; date: string; longDate: string; city: string; invitationText: string;
+  groomName: string; brideName: string; date: string; displayDate: string; longDate: string; city: string; invitationText: string;
   ceremony: EventDetails; reception: EventDetails; timeline: TimelineItem[]; gallery: GalleryItem[]; rsvpDeadline: string;
   calendar: { title: string; start: string; end: string; location: string; description: string };
   music: { enabled: boolean; src: string };
 };
 
 export const wedding: WeddingData = {
-  groomName: "Anthony",
-  brideName: "BRIDE NAME",
-  date: "12 December 2026",
-  longDate: "Saturday, the twelfth of December two thousand twenty-six",
+  groomName: "Văn Khoa",
+  brideName: "Ngọc Anh",
+  date: "21 February 2027",
+  displayDate: "21 · 02 · 2027",
+  longDate: "Sunday, the twenty-first of February two thousand twenty-seven",
   city: "Ho Chi Minh City · Vietnam",
   invitationText: "We invite you to celebrate the beginning of our next chapter.",
   ceremony: {
@@ -36,8 +37,8 @@ export const wedding: WeddingData = {
   ],
   rsvpDeadline: "Please reply by 12 November 2026",
   calendar: {
-    title: "Anthony & BRIDE NAME · Wedding celebration", start: "20261212T173000", end: "20261212T230000",
-    location: "CEREMONY VENUE, Ho Chi Minh City", description: "Wedding celebration for Anthony and BRIDE NAME.",
+    title: "Văn Khoa & Ngọc Anh · Wedding celebration", start: "20270221T173000", end: "20270221T230000",
+    location: "CEREMONY VENUE, Ho Chi Minh City", description: "Wedding celebration for Văn Khoa and Ngọc Anh.",
   },
   music: { enabled: false, src: "/music/wedding.mp3" },
 };

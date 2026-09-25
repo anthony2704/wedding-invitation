@@ -8,7 +8,7 @@ export default function Invitation() {
           <div><p className="eyebrow">Together with our families</p><h2 className="intro-heading serif" id="invitation-title">A formal invitation</h2></div>
           <p className="intro-copy serif">{wedding.invitationText}</p>
         </div>
-        <div className="intro-foot"><p className="intro-date serif">{wedding.longDate}</p><p className="intro-monogram" aria-label="Anthony and Bride Name">A · B</p></div>
+        <div className="intro-foot"><p className="intro-date serif">{wedding.longDate}</p><p className="intro-monogram" aria-label={`${wedding.groomName} and ${wedding.brideName}`}>A · B</p></div>
       </div>
     </section>
   );

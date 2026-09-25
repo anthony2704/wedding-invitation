@@ -5,7 +5,7 @@ import { wedding } from "@/data/wedding";
 function makeCalendarFile() {
   const event = wedding.calendar;
   return [
-    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Anthony and Bride Name//Wedding Invitation//EN", "BEGIN:VEVENT",
+    "BEGIN:VCALENDAR", "VERSION:2.0", `PRODID:-//${wedding.groomName} and ${wedding.brideName}//Wedding Invitation//EN`, "BEGIN:VEVENT",
     `DTSTART:${event.start}`, `DTEND:${event.end}`, `SUMMARY:${event.title}`, `LOCATION:${event.location}`,
     `DESCRIPTION:${event.description}`, "END:VEVENT", "END:VCALENDAR",
   ].join("\r\n");

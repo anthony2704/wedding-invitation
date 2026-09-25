@@ -45,7 +45,7 @@ export default function InvitationCover({ onInvitationOpen, onComplete }: Invita
               <article className="envelope-card" aria-label="Wedding invitation preview">
               <p className="envelope-card-kicker">Together with our families</p>
               <p className="envelope-card-names serif">{wedding.groomName}<span>&amp;</span>{wedding.brideName}</p>
-              <p className="envelope-card-date">{wedding.date.replace(" December ", " · ")}</p>
+              <p className="envelope-card-date">{wedding.displayDate}</p>
               <p className="envelope-card-place">{wedding.city}</p>
               </article>
             </div>
